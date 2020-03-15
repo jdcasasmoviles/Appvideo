@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.Menu;
@@ -13,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.jdcasasmoviles.appvideo.DataModel.ApiPeticiones.ApiService;
@@ -90,7 +91,8 @@ public class MenuPrincipal extends AppCompatActivity {
         int id = item.getItemId();
         switch (id){
             case R.id.menu_1:
-                // fragment
+                Toast.makeText(CUView.ContextAMenuUsuario, "Actualizando...", Toast.LENGTH_SHORT).show();
+                VMMenuUsuario.loadGrabaciones(client);
                 break;
             case R.id.menu_2:
                 DialogoApp.cargarDialogo("Este item no esta disponible\n en la  app demo");

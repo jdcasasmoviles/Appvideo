@@ -5,7 +5,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.ViewModel;
@@ -30,7 +29,6 @@ public class VMMenuUsuario extends ViewModel {
   public static CollapsingToolbarLayout collapsingToolbarLayout;
     public static RecyclerAdapterGrabaciones adapterGrabaciones;
     public  static RecyclerView rv_grabaciones;
-    ////////////
     public static void setearDatodUsuarios(){
       VMMenuUsuario.tv_name.setText( CUView.usuarioPrincipal.getName());
       VMMenuUsuario.tv_username.setText( CUView.usuarioPrincipal.getUsername());
@@ -72,5 +70,6 @@ public class VMMenuUsuario extends ViewModel {
       }
     });
   }
+
 
 }

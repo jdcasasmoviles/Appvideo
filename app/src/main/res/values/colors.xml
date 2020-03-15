@@ -20,4 +20,7 @@
     <!--BOTTON SHEET -->
     <item name="color_tv_bottom_sheet" type="color">#FFFFFF</item>
     <item name="background1" type="color">#101010</item>
+    <!--SWIPE -->
+    <item name="holo_orange_light" type="color">#FFC107</item>
+    <item name="holo_red_light" type="color">#F44336</item>
 </resources>

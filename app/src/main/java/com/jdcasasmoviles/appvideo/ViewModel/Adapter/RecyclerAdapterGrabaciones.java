@@ -67,13 +67,20 @@ public class RecyclerAdapterGrabaciones extends RecyclerView.Adapter<RecyclerAda
     }
 
     public void setData(List<Grabaciones> grabacionesList){
+        this.grabacionesList.clear();
         this.grabacionesList = grabacionesList;
+        notifyDataSetChanged();
+    }
+
+    // Add a list of items -- change to type used
+    public void addAll(List<Grabaciones> grabacionesList) {
+        grabacionesList.addAll(grabacionesList);
         notifyDataSetChanged();
     }
 
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView tv_nombre_grabacion_cabecera,tv_nombre_usuario,tv_nombre_grabacion,tv_reproducciones;
+        private TextView tv_nombre_grabacion_cabecera,tv_nombre_usuario,tv_nombre_grabacion,tv_reproducciones,tv_titulo_like;
         ImageView iv_preview_img,iv_imagen_usuario,iv_play,iv_videocamara,iv_puntos,iv_like;
         private String path="";
         private static final String TAG = "VideoViewDemo";
@@ -87,6 +94,7 @@ public class RecyclerAdapterGrabaciones extends RecyclerView.Adapter<RecyclerAda
             tv_nombre_grabacion_cabecera = (TextView) itemView.findViewById( R.id.tv_nombre_grabacion_cabecera );
             tv_nombre_grabacion = (TextView) itemView.findViewById( R.id.tv_nombre_grabacion );
             tv_reproducciones = (TextView) itemView.findViewById( R.id.tv_reproducciones );
+            tv_titulo_like = (TextView) itemView.findViewById( R.id.tv_titulo_like );
             iv_videocamara=(ImageView) itemView.findViewById(R.id.iv_videocamara);
             iv_puntos=(ImageView) itemView.findViewById(R.id.iv_puntos);
             iv_play=(ImageView) itemView.findViewById(R.id.iv_play);
@@ -98,6 +106,17 @@ public class RecyclerAdapterGrabaciones extends RecyclerView.Adapter<RecyclerAda
         }
 
         public void botonLike(){
+            tv_titulo_like.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (SystemClock.elapsedRealtime() - CUView.ultimoClick > CUView.TIEMPO_MINIMO){
+                        animacion(like);
+                        like.setVisibility( View.VISIBLE );
+                        like.playAnimation();
+                    }
+                    CUView.ultimoClick= SystemClock.elapsedRealtime();
+                }
+            });
             iv_like.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

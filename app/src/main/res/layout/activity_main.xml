@@ -14,117 +14,132 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background1">
-    <ImageView
-            android:id="@+id/loginActivityImageView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:src="@drawable/ic_videocamara"
-            android:tint="@color/colorAccent" />
 
-    <TextView
-        android:id="@+id/loginActivityTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/loginActivityImageView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="Jdc Videos"
-        android:textColor="@color/color_tv_bottom_sheet"
-        android:textSize="24dp"
-        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <androidx.cardview.widget.CardView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            card_view:cardBackgroundColor="@color/fondo_card_view"
-            android:layout_marginTop="100dp"
-            android:id="@+id/loginActivityCardView"
-            android:layout_marginRight="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_below="@+id/loginActivityTextView"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_above="@+id/loginActivityTextViewForgot"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="8dp"
-                android:orientation="vertical">
-
-                <EditText
-                    android:id="@+id/et_usuario"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_user"
-                    android:drawablePadding="8dp"
-                    android:hint="Usuario"
-                    android:textColor="@color/color_et_escribe"
-                    android:textColorHint="@color/colorAccent"
-                    android:inputType="textEmailAddress" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorPrimary"></View>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:id="@+id/et_password"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_lock"
-                    android:drawablePadding="8dp"
-                    android:hint="Password"
-                    android:textColorHint="@color/colorAccent"
-                    android:textColor="@color/color_et_escribe"
-                    android:inputType="textPassword" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorPrimary"></View>
-
-                <Button
-                    android:id="@+id/bt_menu"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="23dp"
-                    android:background="@drawable/gradientbuttonsignup"
-                    android:text="Log in"
-                    android:textAllCaps="false"
-                    android:textColor="@color/color_tv_bottom_sheet" />
-
-                <Button
-                    android:id="@+id/loginActivityBtSigup"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginTop="16dp"
-                    android:background="@drawable/gradientbuttonsignup"
-                    android:text="Sign Up"
-                    android:textAllCaps="false"
-                    android:textColor="@color/color_tv_bottom_sheet" />
-
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-
-        <TextView
-            android:id="@+id/loginActivityTextViewForgot"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:text="¿Olvidaste la Contraseña?"
-            android:textColor="@color/color_tv_bottom_sheet" />
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/loginActivityImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_videocamara"
+                android:tint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/loginActivityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginActivityImageView"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="Jdc Videos"
+                android:textColor="@color/color_tv_bottom_sheet"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                card_view:cardBackgroundColor="@color/fondo_card_view"
+                android:layout_marginTop="100dp"
+                android:id="@+id/loginActivityCardView"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_below="@+id/loginActivityTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/loginActivityTextViewForgot"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_usuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:drawablePadding="8dp"
+                        android:hint="Usuario"
+                        android:textColor="@color/color_et_escribe"
+                        android:textColorHint="@color/colorAccent"
+                        android:inputType="textEmailAddress" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"></View>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/et_password"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_lock"
+                        android:drawablePadding="8dp"
+                        android:hint="Password"
+                        android:textColorHint="@color/colorAccent"
+                        android:textColor="@color/color_et_escribe"
+                        android:inputType="textPassword" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"></View>
+
+                    <Button
+                        android:id="@+id/bt_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23dp"
+                        android:background="@drawable/gradientbuttonsignup"
+                        android:text="Log in"
+                        android:textAllCaps="false"
+                        android:textColor="@color/color_tv_bottom_sheet" />
+
+                    <Button
+                        android:id="@+id/loginActivityBtSigup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/gradientbuttonsignup"
+                        android:text="Sign Up"
+                        android:textAllCaps="false"
+                        android:textColor="@color/color_tv_bottom_sheet" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/loginActivityTextViewForgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="¿Olvidaste la Contraseña?"
+                android:textColor="@color/color_tv_bottom_sheet" />
+        </LinearLayout>
+    </ScrollView>
 
     </RelativeLayout>
    </androidx.constraintlayout.widget.ConstraintLayout>
