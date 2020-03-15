@@ -1,0 +1,16 @@
+<resources>
+    <!-- ACTIVIDAD ActividadEditarUsuario-->
+    <dimen name="global_padding">15dp</dimen>
+    <dimen name="global_layout_marginEnd">15dp</dimen>
+    <dimen name="global_layout_marginStart">15dp</dimen>
+    <dimen name="global_letra_size">12sp</dimen>
+    <dimen name="espacio_bajo_fragmento">100dp</dimen>
+    <dimen name="tv_letra_size_3">16sp</dimen>
+
+    <!--BOTTON SHEET -->
+    <dimen name="margin_top_bs">14dp</dimen>
+    <dimen name="margin_bottom_bs">20dp</dimen>
+    <dimen name="iv_layout_marginTop_bs">7dp</dimen>
+    <!--APP BAR -->
+    <dimen name="app_bar_height">300dp</dimen>
+</resources>

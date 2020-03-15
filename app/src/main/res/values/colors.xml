@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6a3af2</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#0cc1c2</color>
+
+    <item name="fondo" type="color">#111111</item>
+    <item name="fondo2" type="color">#171628</item>
+
+    <!--DATOS USUARIOS -->
+    <item name="fondo_datos_usuarios" type="color">#6a3af2</item>
+    <item name="fondo_boton_datos_usuario" type="color">#9650f4</item>
+    <!--CARD VIEW -->
+    <item name="fondo_card_view" type="color">#252525</item>
+    <!--COLAPSO -->
+    <item name="background_colapso" type="color">#0e0e1a</item>
+    <!--EDITTEXT -->
+    <item name="color_hint_et" type="color">#8e8e97</item>
+    <item name="color_et_escribe" type="color">#FFFFFF</item>
+    <!--BOTTON SHEET -->
+    <item name="color_tv_bottom_sheet" type="color">#FFFFFF</item>
+    <item name="background1" type="color">#101010</item>
+</resources>

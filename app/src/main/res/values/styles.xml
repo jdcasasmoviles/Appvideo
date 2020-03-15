@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme"  parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base APP BAR  theme. -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="EditTextCliente" parent="android:Widget.EditText">
+        <item name="android:layout_marginStart">@dimen/global_layout_marginStart</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginEnd">@dimen/global_layout_marginEnd</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:fontFamily">@font/source_sans_pro_semi_bold</item>
+        <item name="android:inputType">text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:text"></item>
+        <item name="android:textColor">@color/color_et_escribe</item>
+        <item name="android:textSize">@dimen/tv_letra_size_3</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="TextViewCardGrabaciones" parent="android:Widget.TextView">
+        <item name="android:layout_marginStart">@dimen/global_layout_marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/global_layout_marginEnd</item>
+        <item name="android:fontFamily">@font/source_sans_pro_semi_bold</item>
+        <item name="android:text"></item>
+        <item name="android:textColor">@color/color_et_escribe</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+</resources>
